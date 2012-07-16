@@ -110,7 +110,7 @@ class FacebookMiddleware(object):
 
         """
         fb_user = None
-        methods = ['get_fb_user_cookie', 'get_fb_user_canvas']
+        methods = ['get_fb_user_canvas', 'get_fb_user_cookie']
         for method in methods:
             fb_user = getattr(self, method)(request)
             if (fb_user):
